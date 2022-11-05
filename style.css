@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+.name-input {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.first-name, .last-name {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 2em;
+}
+.first-name input, .last-name input{
+     width: 348px;
+     height: 44px;
+     border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 6px;
+}
+.first-name input::placeholder, .last-name input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 1em;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    width: 720px;
+    height: 70px;
+}
+.email input {
+    width: 720px;
+height: 44px;
+border: 1px solid #D0D5DD;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 6px;
+}
+.email input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding-left: 1em;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.message textarea {
+    width: 720px;
+    height: 132px;
+    border: 1px solid #D0D5DD;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 6px;
+}
+.message textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 720px;
+    height: 24px;
+    line-height: 24px;
+}
+#btn__submit {
+    width: 720px;
+height: 48px;
+background: #1570EF;
+border: 1px solid #1570EF;
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+gap: 8px;
+padding: 12px 20px;
+color: white;
+font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin-top: 2em;
+}
+hr {
+    border: 0.1px solid #c4c7cc;
+    margin-top: 4em;
+}
+@media (max-width: 811px) {
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-input {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-name , .last-name {
+        flex-direction: column; 
+        width: 343px;
+        height: 70px;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .first-name input, .last-name input {
+        align-items: center;
+padding: 10px 14px;
+gap: 8px;
+width: 343px;
+height: 44px;
+    }
+    .email {
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+width: 343px;
+height: 70px;
+    }
+    .email input {
+        align-items: center;
+padding: 10px 14px;
+gap: 8px;
+width: 343px;
+height: 44px;
+    }
+    .message {
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+width: 343px;
+height: 158px;
+    }
+    .message textarea {
+        align-items: flex-start;
+gap: 8px;
+width: 343px;
+height: 132px;
+    }
+    .message textarea::placeholder {
+        width: 315px;
+        height: 108px;
+    }
+    .checkbox {
+        display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+width: 343px;
+height: 48px;
+    }
+    .checkbox input {
+        width: 20px;
+height: 20px;
+    }
+    #btn__submit {
+        justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+width: 343px;
+height: 48px;
+    }
+}
